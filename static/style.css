@@ -1,8 +1,36 @@
 table{
     border-collapse: collapse;
-    margin: 25px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: #36e713;
+    color: black;
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    
 }
+th, td{
+border: 1px solid;
+border-color:black ;
+}
+tr{
+    border: 1px solid;
+    border-color:black ;
+    }
+
+thead{
+    background-color: #36e713;
+}
+h1{
+text-align: center;
+}
+
+
