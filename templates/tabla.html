@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Növények Táblázata</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="mt-5">Növények Táblázata</h1>
+        <table class="table table-bordered mt-3">
+            <thead>
+                <tr>
+                    <th>Név</th>
+                    <th>Típus</th>
+                    <th>Jellemző</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for plant in plants %}
+                <tr>
+                    <td>{{ plant.name }}</td>
+                    <td>{{ plant.type }}</td>
+                    <td>{{ plant.feature }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="{{ url_for('index') }}" class="btn btn-primary mt-3">Vissza a főoldalra</a>
+    </div>
 </body>
 </html>
